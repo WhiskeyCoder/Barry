@@ -5,6 +5,9 @@
 
 **Barry** is a shareable HTTP engine for the *Drosophila* nervous system: **MaleCNS v1.0** (166,700 neurons, brain + VNC), sparse LIF dynamics, and an experiment API for anything you can encode as inject/step/readout — navigation, trading, puzzles, sixth senses, multiverse ensembles.
 
+![image](https://raw.githubusercontent.com/WhiskeyCoder/Barry/refs/heads/main/images/2026.png)
+
+
 ## Try it in 2 minutes (no connectome download)
 
 ```powershell
