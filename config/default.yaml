@@ -1,0 +1,6 @@
+engine:
+  default_connectome: malecns_v1   # malecns_v1 | flywire_v783 | procedural
+  default_scale: medium             # procedural only
+  connectome_data_dir: ./connectome-data
+  dt_ms: 0.1
+  device: auto

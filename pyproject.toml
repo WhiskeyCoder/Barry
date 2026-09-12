@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fly-brain-engine"
+version = "0.1.0"
+description = "Barry — MaleCNS v1.0 fruit fly brain HTTP experiment engine (166k neurons, inject/step/multiverse API)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+  "numpy>=1.26.0",
+  "scipy>=1.11.0",
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.32.0",
+  "pydantic>=2.9.0",
+  "pydantic-settings>=2.6.0",
+  "pyyaml>=6.0.2",
+  "httpx>=0.27.0",
+  "structlog>=24.4.0",
+]
+
+[project.optional-dependencies]
+torch = ["torch>=2.2.0"]
+dev = ["pytest>=8.3.0", "pytest-asyncio>=0.24.0", "httpx>=0.27.0", "websockets>=13.0"]
+barry = ["pyarrow>=15.0.0"]
+
+[project.scripts]
+fly-brain-engine = "fly_brain_engine.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fly_brain_engine"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

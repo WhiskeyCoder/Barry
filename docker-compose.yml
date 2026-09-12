@@ -1,0 +1,12 @@
+services:
+  fly-brain-engine:
+    build: .
+    ports:
+      - "8090:8090"
+    environment:
+      FBE_DEMO: "1"
+    volumes:
+      - engine-data:/app/engine-data
+
+volumes:
+  engine-data:
