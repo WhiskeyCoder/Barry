@@ -84,9 +84,8 @@ ec.inject(bid, "synthetic.compass.x", 0.5)
 ```
 
 ## IMPORTANT NOTE:
-```txt
 Barry simulates neural activity using connectome-derived connectivity and simplified neuronal dynamics. It is not a complete biological simulation of a living fruit fly, and no claim is made that the system is conscious, sentient, or experiences subjective states. Synthetic sensory mappings and experimental additions are explicitly distinguished from biologically established circuits.... so no ... THEY HAVE NOT IMPRISONED A FLY'S SOUL IN PYTHON
-```
+
 
 ## License
 
