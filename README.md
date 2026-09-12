@@ -8,7 +8,7 @@
 ## Try it in 2 minutes (no connectome download)
 
 ```powershell
-git clone <your-repo-url>
+git clone https://github.com/WhiskeyCoder/Barry
 cd fly-brain-engine
 python -m venv .venv
 .venv\Scripts\activate
